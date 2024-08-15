@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fff; /* Ubah background menjadi putih */
+  color: #000; /* Ubah teks menjadi hitam */
+}
+
+/* globals.css */
+.navbar {
+  background-color: #f3f4f6; /* bg-gray-100 */
+  color: #000000; /* text-black */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
+}
+
+.navbar.scrolled {
+  background-color: #e5e7eb; /* bg-gray-200 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Konsistensi Font */
+button, input, textarea {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Responsive Image and Video */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.video-container {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-overlay {
+  background-blend-mode: overlay;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+h1, h2 {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #000; /* Ubah heading menjadi hitam */
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+.bg-gray-900 {
+  background-color: #1a1a1a;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.text-gray-900 {
+  color: #1a1a1a;
+}
+
+.hover\:text-gray-400:hover {
+  color: #9ca3af;
+}
+
+.hover\:bg-blue-700:hover {
+  background-color: #1d4ed8;
+}
+.company-overview, .company-history {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.company-overview img {
+  max-width: 100%;
+  height: auto;
+}
+.company-history {
+  position: relative;
+  padding-left: 40px;
+}
+
+.company-history time {
+  color: #999;
+}
+
+.company-history h4 {
+  margin-bottom: 8px;
+}
+
+.company-history p {
+  color: #666;
+}
+
+.text-sm {
+  font-size: 13px;
+}
